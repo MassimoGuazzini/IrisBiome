@@ -8,7 +8,7 @@ Desktop workflow for paired-end 16S rRNA microbiome analysis, combining a Python
 
 ## Overview
 
-IrisBiome demonstrates the integration of sequencing-data processing, sample metadata and automated reporting. The public repository contains the DADA2 pipeline and a reduced, runnable reporting layer. The original literature-curated interpretation layer is private.
+IrisBiome is a software that allows the complete analysis of a gut microbiome metagenomic data, starting from sequencing-data processing, sample metadata and automated reporting. The public repository contains the DADA2 pipeline and a reduced, runnable reporting layer. The original literature-curated interpretation layer is private. Fell free to contact me if intersted.
 
 **Start here without installing anything:** [Italian demo report](docs/IrisBiome_demo_report.docx), [English demo report](docs/IrisBiome_demo_report_en.docx), [summary workbook](examples/demo_summary.xlsx).
 
