@@ -1,0 +1,19 @@
+[project]
+name = "irisbiome"
+version = "0.9.0.dev0"
+description = "Desktop workflow for paired-end 16S rRNA microbiome analysis and reporting."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Massimo Guazzini" }
+]
+dependencies = [
+  "PyQt5>=5.15,<6"
+]
+
+[project.urls]
+Repository = "https://github.com/MassimoGuazzini/IrisBiome"
+
+[tool.setuptools]
+py-modules = ["IrisBiome"]
+

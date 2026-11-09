@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+renv/library/
+
+# IDE
+.idea/
+.vscode/
+
+# Build artifacts
+build/
+dist/
+*.spec.bak
+
+# Runtime outputs
+logs/
+Rplots.pdf
+*.log
+output/
+outputs/
+reports/
+processed_data/
+
+# Sensitive or real project data
+*_anamnesi.json
+anamnesi*.json
+!examples/demo_anamnesi.json
+raw_data/
+fastq/
+*.fastq
+*.fastq.gz
+
+# Taxonomic databases are large and license-sensitive.
+database/dada2/
+database/**/*.fa
+database/**/*.fa.gz
+database/**/*.fasta
+database/**/*.fasta.gz
+
+
+# Office editor lock files
+.~lock.*#
+~$*
+
+# Private interpretation resources and local archives
+private/
+backups/
+*private-backup*/
+data/summary_table_checked.xlsx
+
+# Archived artwork is retained locally, not distributed
+assets/old/

@@ -1,0 +1,12 @@
+seq	DEMO001	Kingdom	Phylum	Class	Order	Family	Genus	Species
+ASV_DEMO_001	4200	Bacteria	Firmicutes	Clostridia	Oscillospirales	Ruminococcaceae	Faecalibacterium	NA
+ASV_DEMO_002	3100	Bacteria	Bacteroidetes	Bacteroidia	Bacteroidales	Bacteroidaceae	Bacteroides	NA
+ASV_DEMO_003	1800	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Roseburia	NA
+ASV_DEMO_004	900	Bacteria	Actinobacteria	Actinobacteria	Bifidobacteriales	Bifidobacteriaceae	Bifidobacterium	NA
+ASV_DEMO_005	650	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Blautia	NA
+ASV_DEMO_006	440	Bacteria	Proteobacteria	Gammaproteobacteria	Enterobacterales	Enterobacteriaceae	Escherichia/Shigella	NA
+ASV_DEMO_007	390	Bacteria	Verrucomicrobia	Verrucomicrobiae	Verrucomicrobiales	Akkermansiaceae	Akkermansia	NA
+ASV_DEMO_008	280	Bacteria	Firmicutes	Negativicutes	Veillonellales	Veillonellaceae	Dialister	NA
+ASV_DEMO_009	190	Bacteria	Bacteroidetes	Bacteroidia	Bacteroidales	Prevotellaceae	Prevotella	NA
+ASV_DEMO_010	120	Bacteria	Firmicutes	Clostridia	Oscillospirales	Ruminococcaceae	Ruminococcus	NA
+
