@@ -27,6 +27,8 @@ This repository the publicly available portfolio version of this work.
 
 **No installation required to explore example outputs:**
 
+- [Italian PDF preview](docs/IrisBiome_demo_report.pdf)
+- [English PDF preview](docs/IrisBiome_demo_report_en.pdf)
 - [Italian demonstration report](docs/IrisBiome_demo_report.docx)
 - [English demonstration report](docs/IrisBiome_demo_report_en.docx)
 - [Summary workbook](examples/demo_summary.xlsx)
@@ -96,7 +98,9 @@ Taxonomic assignment code paths are provided for **SILVA, RDP, Greengenes, and G
 - Dedicated **Pipeline**, **Anamnesis**, and **Report** tabs.
 - Automated generation of structured DOCX reports.
 - XLSX summary tables for downstream analysis.
-- Italian and English demonstration reports.
+- Full-format Italian and English demonstration reports with anamnesis, summary, biodiversity, taxonomy, enterotype comparison, functional tables and integrated comments.
+- Reference intervals masked as `xx–xx`, without including real numeric bounds.
+- Synthetic presentation scores restricted to the exact shipped demo count/taxonomy fixture.
 
 ## Workflow
 
@@ -119,6 +123,10 @@ For additional details, see the [workflow documentation](docs/workflow.md).
 | Pipeline | Anamnesis | Report |
 | --- | --- | --- |
 | ![Pipeline](screenshots/gui_pipeline.png) | ![Anamnesis](screenshots/gui_anamnesis.png) | ![Report](screenshots/gui_report.png) |
+
+### Report Preview
+
+![Functional table with masked reference ranges](screenshots/report_preview.png)
 
 ## Installation
 
@@ -159,11 +167,13 @@ See the [usage guide](docs/usage.md) for additional instructions.
 
 ## Demo Dataset
 
-All sample counts and associated metadata included in this repository are **synthetic** and provided exclusively for demonstration purposes.
+All sample counts and associated metadata included in this repository are **synthetic** and provided exclusively for demonstration purposes. The demo identity reproduces details from a reference report that the author confirmed were fictional.
 
 The three mappings in `data/functional_categories.xlsx` illustrate how external reference tables can be integrated into the reporting workflow.
 
 These mappings are arbitrary examples and do not represent validated biological associations, clinical reference populations, or functional microbiome predictions.
+
+`data/showcase_functions.csv` contains invented percentages and evaluation labels for presentation only, independently of taxa. Only the exact shipped `DEMO001` counts and taxonomy activate these synthetic scores. Other inputs receive `xx` values and withheld evaluations; matching the sample name alone is insufficient.
 
 ### Run the Reporting Demo
 
@@ -215,10 +225,13 @@ Containing:
 - `Summary`
 - `Genus_Abundance`
 - `Demo_Groups`
+- `Showcase_Functions`, with explicit synthetic/withheld provenance in `Origin`
 
 **Data visualizations**
 
 - `plots/<sample>_phylum.png`
+- `plots/<sample>_genus.png`
+- `plots/<sample>_enterotype_comparison.png`, when the comparison genera are present.
 - `plots/<sample>_rarefaction.png`, when classified genus counts are available.
 
 The public reporting implementation uses simplified output structures compared with the extended private version.
@@ -250,9 +263,9 @@ The public portfolio version excludes:
 - Health-state classification rules.
 - Personalized nutritional recommendations.
 
-The three microbiome-state illustrations included in the public version are presented exclusively as an artwork legend. No health-state classification is performed.
+The intermediate-state icon illustrates a fictional demonstration scenario; it is not a computed health classification of the input. All reference columns contain the literal placeholder `xx–xx`. Real intervals and private rules are absent from source, data and exports. The source reference PDF and its full bibliography are not distributed.
 
-**For further information about the original project or its development, please contact [Massimo Guazzini](https://github.com/MassimoGuazzini).**
+**For information about access to the complete private version, or about the original project and its development, please contact [Massimo Guazzini](https://github.com/MassimoGuazzini).**
 
 ## Testing and Validation
 
@@ -268,6 +281,8 @@ The following components have been checked locally in the public implementation:
 - Synthetic metadata integration.
 - Demonstration report generation.
 - DOCX and XLSX output generation.
+- PDF example export and visual inspection.
+- Masked intervals in DOCX, PDF and XLSX, and blocking of synthetic scores when demo counts or taxonomy change.
 
 ### Further Validation
 

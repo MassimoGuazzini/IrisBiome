@@ -1,6 +1,6 @@
 # Synthetic demo data
 
-The files in this folder are synthetic examples for portfolio and smoke-test use.
+The files in this folder are synthetic examples for portfolio and smoke-test use. The demo identity is reproduced from the reference report with the author’s confirmation that those details are fictional.
 
 - `demo_species_merged_count.txt` mimics the DADA2 taxonomy/count table consumed by `R/report.R`.
 - `demo_anamnesi.json` mimics the GUI anamnesis JSON for sample `DEMO001`.
@@ -21,4 +21,4 @@ Rscript R/report.R \
 ```
 
 
-The demo reports and workbook are generated with the public reporter. They contain no private thresholds or curated functional data. Groups A/B/C are arbitrary illustrations, not biological categories. The artwork legend does not classify the sample as healthy or unhealthy.
+The demo reports and workbook are generated with the public reporter. They contain no private thresholds or curated functional data. Groups A/B/C are arbitrary illustrations, not biological categories. The status illustration is a fictional scenario, not a classification. The full-format report uses `xx–xx` reference intervals and synthetic functional scores only for the exact shipped input fixture.

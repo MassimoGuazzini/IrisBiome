@@ -34,4 +34,6 @@ Use the [demo command](../README.md#demo-dataset) with `--language en` and `--la
 
 Local R versions at verification: R 4.3.3, dada2 1.30.0, officer 0.6.4, flextable 0.9.4, openxlsx 4.2.9, vegan 2.7.6. These are a record of this environment, not a dependency lockfile.
 
-The public reporter uses demonstration-only mappings. A successful run does not validate biological associations, clinical thresholds or nutritional recommendations; those are absent from this build.
+The full-format renderer uses literal `xx–xx` reference intervals. Functional presentation scores come from an independent synthetic fixture, with a guard against displaying them for other inputs. The public reporter uses demonstration-only mappings. A successful run does not validate biological associations, clinical thresholds or nutritional recommendations; those are absent from this build.
+
+Full-format showcase checks: Italian and English DOCX generation, PDF export through LibreOffice, visual inspection of the cover and functional table, literal `xx–xx` references in DOCX/XLSX/PDF, and blocking of synthetic functional scores when demo counts or taxonomy change. The source reference PDF is not included.

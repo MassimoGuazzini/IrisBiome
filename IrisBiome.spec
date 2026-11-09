@@ -10,6 +10,7 @@ datas = [
     ('data', 'data'),
     ('R/dada2_analysis.R', 'R'),
     ('R/report.R', 'R'),
+    ('R/report_showcase.R', 'R'),
     ('R/install_dependencies.R', 'R'),
 ]
 binaries = []

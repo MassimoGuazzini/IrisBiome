@@ -75,3 +75,9 @@ Rscript tests/smoke_report.R
 ```
 
 Sample identifiers used for report filenames may contain ASCII letters, digits, dots, underscores and hyphens, starting with a letter or digit. The public GUI exposes the `Demo` report type; legacy report-type fields in existing JSON files do not select private report logic.
+
+## Full-format showcase
+
+The default report now presents the complete section structure with masked `xx–xx` reference intervals. `Showcase_Functions` in the XLSX identifies synthetic presentation rows. Only the exact shipped DEMO001 counts/taxonomy activate the invented functional scores; a matching sample name alone is insufficient. Other inputs keep descriptive taxonomy but use `xx` and withheld evaluations for private sections.
+
+Ready-to-view full-format examples: [Italian PDF](IrisBiome_demo_report.pdf) and [English PDF](IrisBiome_demo_report_en.pdf). PDF examples are exported from the DOCX with LibreOffice; the script itself produces DOCX/XLSX and plots.

@@ -4,6 +4,14 @@ stopifnot(file.exists('R/report.R'))
 work <- tempfile('irisbiome-integration-')
 dir.create(work)
 report_script <- normalizePath('R/report.R')
+source('R/report_showcase.R')
+fixture <- read.delim('examples/demo_species_merged_count.txt',check.names=FALSE,stringsAsFactors=FALSE)
+stopifnot(is_showcase_fixture(fixture,'DEMO001',getwd()))
+changed <- fixture; changed$DEMO001[1] <- changed$DEMO001[1]+1
+stopifnot(!is_showcase_fixture(changed,'DEMO001',getwd()))
+changed <- fixture; changed$Family[1] <- 'Different family'
+stopifnot(!is_showcase_fixture(changed,'DEMO001',getwd()))
+
 metadata_dir <- file.path(work,'anamnesis')
 dir.create(metadata_dir)
 table <- read.delim('examples/demo_species_merged_count.txt', check.names=FALSE)
@@ -32,6 +40,8 @@ genera <- openxlsx::read.xlsx(file.path(out,'summary_table.xlsx'),sheet='Genus_A
 stopifnot(all(abs(tapply(genera$Percent,genera$Sample,sum)-100)<1e-8), 'Unclassified' %in% genera$Taxon)
 groups <- openxlsx::read.xlsx(file.path(out,'summary_table.xlsx'),sheet='Demo_Groups')
 stopifnot(nrow(groups)==6L, all(groups$Percent[groups$Genus=='Faecalibacterium']==0))
+showcase <- openxlsx::read.xlsx(file.path(out,'summary_table.xlsx'),sheet='Showcase_Functions')
+stopifnot(nrow(showcase)==32L, all(showcase$Value=='xx'), all(showcase$Reference=='xx–xx'), all(showcase$Origin=='not_computed_public'))
 for (sample in c('DEMO001','DEMO002')) {
  doc <- file.path(out,'reports',paste0('Demo_',sample,'_report.docx'))
  stopifnot(file.exists(doc), 'word/document.xml' %in% unzip(doc,list=TRUE)$Name)

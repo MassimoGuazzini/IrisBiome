@@ -1,0 +1,17 @@
+Key,Italian,English,Demo_Percent,Demo_Status
+butyrate,Produttori di butirrato,Butyrate-associated group,18.4,normal
+acetate,Produttori di acetato,Acetate-associated group,37.2,high
+propionate,Produttori di propionato,Propionate-associated group,21.6,normal
+vitamin_b,Produttori di vitamina B,Vitamin B-associated group,14.8,low
+vitamin_k,Produttori di vitamina K,Vitamin K-associated group,29.3,normal
+histamine,Produttori di istamina,Histamine-associated group,4.7,high
+gluten,Degradazione del glutine,Gluten degradation-associated group,8.2,low
+lactose,Degradazione del lattosio,Lactose degradation-associated group,24.5,normal
+tma,Produttori di TMA,TMA-associated group,6.3,normal
+lps,Produttori di LPS,LPS-associated group,11.9,high
+mucin,Attività mucolitica,Mucin-associated group,17.8,normal
+serotonin,Produttori di serotonina,Serotonin-associated group,19.4,normal
+dopamine,Produttori di dopamina,Dopamine-associated group,12.6,normal
+gaba,Produttori di GABA,GABA-associated group,22.1,normal
+noradrenaline,Produttori di noradrenalina,Noradrenaline-associated group,3.8,low
+fermentation,Batteri fermentativi,Fermentation-associated group,41.7,high

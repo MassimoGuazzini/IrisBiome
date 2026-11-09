@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Restored full-format report presentation inspired by the complete reference report.
+- Masked reference intervals as `xx–xx` without distributing private numeric bounds.
+- Added independent synthetic functional scores restricted to the exact shipped demo input.
+- Included the reference report identity after the author confirmed it was fictional.
+
 ## 0.9.0.dev0 — Portfolio preview
 
 - Renamed the application and build to IrisBiome; integrated the new logo and microbiome illustrations.
